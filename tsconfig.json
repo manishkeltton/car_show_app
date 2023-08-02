@@ -18,6 +18,6 @@
       "@/*": ["./*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "__test__/index.test.tsx"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "__test__/pages/index.test.tsx"],
   "exclude": ["node_modules"]
 }

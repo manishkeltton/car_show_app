@@ -19,8 +19,8 @@ export default function Home({ searchParams }: HomeProps) {
   const selectData = useSelector((state: any) => state.carData)
   useEffect(() => {
     receivedData()
-  }, [selectData])
-
+  }, [selectData.data])
+  // selectData
   // console.log("selectData => ", selectData);
 
 
@@ -33,8 +33,9 @@ export default function Home({ searchParams }: HomeProps) {
       limit: searchParams?.limit || 10,
       model: searchParams?.model || "",
     });
-    console.log("allCars ++> ", allCars);
-    
+
+    // console.log("allCars ++> ", allCars);
+
     const slice = allCars && allCars?.slice(selectData.offset, selectData.offset + selectData.perPage)
     dispatch(carDetailsData(slice))
     dispatch(carPageCount(Math.ceil(allCars?.length / selectData.perPage)))
