@@ -21,7 +21,7 @@ export default function Home({ searchParams }: HomeProps) {
     receivedData()
   }, [selectData.offset])
   // selectData
-  console.log("selectData => ", selectData);
+  // console.log("selectData => ", selectData);
 
 
   const receivedData = async () => {
@@ -30,7 +30,7 @@ export default function Home({ searchParams }: HomeProps) {
       manufacturer: searchParams?.manufacturer || "",
       year: searchParams?.year || 2022,
       fuel: searchParams?.fuel || "",
-      limit: searchParams?.limit || 10,
+      limit: searchParams?.limit || 30,
       model: searchParams?.model || "",
     });
 

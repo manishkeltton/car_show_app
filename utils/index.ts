@@ -5,7 +5,7 @@
 //   url: 'https://cars-by-api-ninjas.p.rapidapi.com/v1/cars',
 //   params: {model: 'corolla'},
 //   headers: {
-// 'X-RapidAPI-Key': ''dde993fdf0mshb1166413a628b1fp1f806ejsn65fac1857825',',
+// 'X-RapidAPI-Key': 'dde993fdf0mshb1166413a628b1fp1f806ejsn65fac1857825',
 // 'X-RapidAPI-Host': 'cars-by-api-ninjas.p.rapidapi.com'
 // }
 //   }
