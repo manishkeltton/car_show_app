@@ -19,9 +19,9 @@ export default function Home({ searchParams }: HomeProps) {
   const selectData = useSelector((state: any) => state.carData)
   useEffect(() => {
     receivedData()
-  }, [selectData.data])
+  }, [selectData.offset])
   // selectData
-  // console.log("selectData => ", selectData);
+  console.log("selectData => ", selectData);
 
 
   const receivedData = async () => {

@@ -5,7 +5,7 @@
 //   url: 'https://cars-by-api-ninjas.p.rapidapi.com/v1/cars',
 //   params: {model: 'corolla'},
 //   headers: {
-// 'X-RapidAPI-Key': 'd185c03b9emsh1526498fb8cd078p1e624fjsn2e86d062dcc7',
+// 'X-RapidAPI-Key': ''dde993fdf0mshb1166413a628b1fp1f806ejsn65fac1857825',',
 // 'X-RapidAPI-Host': 'cars-by-api-ninjas.p.rapidapi.com'
 // }
 //   }
@@ -23,7 +23,7 @@ import { CarProps, FilterProps } from "@/types";
 export async function fetchCars(filters: FilterProps) {
   const { manufacturer, year, model, limit, fuel } = filters;
   const headers = {
-    "X-RapidAPI-Key": "8003960c58mshed43e65d296152ap1764f7jsn9650f35e9e2b",
+    "X-RapidAPI-Key": "dde993fdf0mshb1166413a628b1fp1f806ejsn65fac1857825",
     "X-RapidAPI-Host": "cars-by-api-ninjas.p.rapidapi.com",
   };
   const response = await fetch(
